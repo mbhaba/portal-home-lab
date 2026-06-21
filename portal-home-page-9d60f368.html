@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开云 · 稳定入口的叙述</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+      background-color: #faf7f0;
+      color: #2b2b2b;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #fefcf7;
+      padding: 2.5rem 2.2rem 3rem;
+      border-radius: 0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+      border: 1px solid #eae5db;
+    }
+
+    /* 开场短句 — 类似引子 */
+    .opening {
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      color: #2f2a21;
+      border-left: 4px solid #c7b7a0;
+      padding-left: 1.2rem;
+      margin-bottom: 1.8rem;
+      text-indent: 0;
+      line-height: 1.5;
+    }
+
+    .opening span {
+      background: #ece4d8;
+      padding: 0.1rem 0.6rem;
+      font-style: normal;
+      font-weight: 400;
+      color: #3b352c;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      text-align: justify;
+      font-size: 1.05rem;
+      word-spacing: 0.02em;
+    }
+
+    p:last-of-type {
+      margin-bottom: 1.8rem;
+    }
+
+    /* 承接段 —— 用引用块制造节奏 */
+    .pull-quote {
+      background: #f4efe7;
+      border-left: 6px solid #b3a086;
+      padding: 1.1rem 1.6rem;
+      margin: 2rem 0 1.8rem 0;
+      font-style: normal;
+      color: #3d372e;
+      font-size: 1.05rem;
+      border-radius: 0 6px 6px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+
+    .pull-quote strong {
+      font-weight: 500;
+      color: #1f1b15;
+    }
+
+    /* 特点列表 — 用无标卡片感 */
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      margin: 1.8rem 0 2rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-grid li {
+      flex: 1 1 200px;
+      background: #f6f2ea;
+      padding: 0.8rem 1rem;
+      border: 1px solid #ded6cb;
+      border-radius: 0;
+      font-size: 0.97rem;
+      color: #2b261e;
+      position: relative;
+      line-height: 1.5;
+      transition: background 0.15s;
+    }
+
+    .feature-grid li::before {
+      content: "·";
+      color: #8a7b66;
+      font-weight: bold;
+      margin-right: 0.5rem;
+      font-size: 1.3rem;
+      vertical-align: middle;
+    }
+
+    .feature-grid li:hover {
+      background: #ebe4d9;
+    }
+
+    /* 提示框 — 温和的说明 */
+    .info-note {
+      background: #f3ede4;
+      padding: 1.2rem 1.6rem;
+      margin: 1.8rem 0 2rem;
+      border: 1px dashed #c9bcab;
+      border-radius: 0;
+      font-size: 1rem;
+      color: #3b342b;
+    }
+
+    .info-note code {
+      font-family: 'Consolas', 'Menlo', monospace;
+      background: #e4dcd0;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.9rem;
+      color: #2c241a;
+    }
+
+    /* 结尾温和段 */
+    .closing {
+      border-top: 1px solid #ddd6ca;
+      padding-top: 1.8rem;
+      margin-top: 1.2rem;
+      color: #4d4438;
+      font-size: 1rem;
+      letter-spacing: 0.01em;
+    }
+
+    .closing a {
+      color: #5a4c3a;
+      text-decoration: none;
+      border-bottom: 1px dotted #b3a086;
+      font-weight: 400;
+      transition: border-bottom 0.2s;
+    }
+
+    .closing a:hover {
+      border-bottom: 2px solid #7a6953;
+    }
+
+    /* 内文中的 a 标签 (非结尾) 使用相同风格 */
+    a {
+      color: #5a4c3a;
+      text-decoration: none;
+      border-bottom: 1px dotted #c1b4a2;
+      font-weight: 400;
+    }
+
+    a:hover {
+      border-bottom: 2px solid #7a6953;
+    }
+
+    /* 小屏适配 */
+    @media (max-width: 540px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+
+      .container {
+        padding: 1.8rem 1.4rem 2.2rem;
+      }
+
+      .opening {
+        font-size: 1.25rem;
+        padding-left: 1rem;
+      }
+
+      .feature-grid {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+
+      .feature-grid li {
+        flex: 1 1 auto;
+      }
+
+      .pull-quote {
+        padding: 1rem;
+        margin: 1.5rem 0;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        padding: 1.2rem 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 开场短句 -->
+  <div class="opening">
+    <span>一个入口的形态</span>，往往定义着抵达的方式。
+  </div>
+
+  <!-- 第一段落：切入稳定入口 -->
+  <p>
+    网络空间中，站点的入口不仅是连结点，更是结构与意图的浓缩。对于长期维护的内容体系而言，一个稳定的入口可以减少寻址的损耗，也让访问者免于在链接迷宫中反复跳转。从信息架构的角度观察，入口的简练与可识别性，往往比装饰性页面更值得优先考虑。
+  </p>
+
+  <!-- 引用块：强调入口质量 -->
+  <div class="pull-quote">
+    <strong>入口的稳定</strong> 并不等于单调。它像一座安静的门廊，不喧哗，但时刻准备着将访问者引导至准确的区域。这也是为什么许多成熟站点选择用最朴素的页面承载最核心的指向。
+  </div>
+
+  <!-- 第二个段落：自然关联到开云 -->
+  <p>
+    正是在这种思路下，<a href="https://portal-home-kai-yun.com">开云</a> 被设计为一个轻量而明晰的起始点。它不堆叠冗余的视觉元素，而是将注意力留给后续的内容逻辑。对常年浏览该站的人来说，这个地址代表的是一套可预期的操作路径——从首页进入，再根据需求深入不同模块。
+  </p>
+
+  <!-- 特点列表：用结构化方式展示四个侧面 -->
+  <ul class="feature-grid">
+    <li>直达性 —— 减少中间跳转，降低认知负荷</li>
+    <li>标识统一 —— 页面风格与主站保持一致的克制调性</li>
+    <li>响应优先 —— 无论设备宽度如何，入口始终清晰可辨</li>
+    <li>内容中立 —— 不预设访问者目的，只提供可靠起点</li>
+  </ul>
+
+  <!-- 第三段：承接特点，补充场景 -->
+  <p>
+    这些特征并不意味着功能上的简陋。相反，一个克制的入口页面往往需要更周详的取舍：哪些信息应当放在首屏，哪些链接需要隐藏至次级菜单。在实际使用中，<a href="https://portal-home-kai-yun.com">开云</a> 的页面结构允许新访客在三秒内理解站点的基本分区，而老用户则可以凭借肌肉记忆直达常用板块。
+  </p>
+
+  <!-- 提示框：类似FAQ摘录，温和解释 -->
+  <div class="info-note">
+    💡 提示：如果你正在寻找特定资源或文档，不妨先通过入口页的导航框架定位；若第一次访问，建议花半分钟浏览页面顶部的分区概览，这比直接搜索更有效率。
+  </div>
+
+  <!-- 第四段：进一步从维护者角度叙述 -->
+  <p>
+    从维护者的视角看，入口页的修改频率应当低于内部内容页，因为每一次结构变动都可能影响依赖该入口的外部引用。因此，<a href="https://portal-home-kai-yun.com">开云</a> 的迭代策略偏向累积式——保留核心框架，微调辅助元素。这种节奏使得站点在长期运营中保持一致性，也降低了访客的再学习成本。
+  </p>
+
+  <!-- 温和结尾 -->
+  <div class="closing">
+    入口本身不是终点，但一个好的入口可以让终点更早抵达。<br>
+    希望每一次经由 <a href="https://portal-home-kai-yun.com">开云</a> 的访问，都是一次平顺的抵达。
+  </div>
+
+</div>
+</body>
+</html>
