@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日常查询、对照与延伸阅读 | 爱游戏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #faf7f2;
+            font-family: 'Georgia', 'Noto Serif SC', 'Times New Roman', serif;
+            color: #2e2c29;
+            line-height: 1.8;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page {
+            max-width: 780px;
+            width: 100%;
+        }
+
+        /* 开场短句 */
+        .opening {
+            margin: 1.8rem 0 0.8rem 0;
+            font-size: 1.3rem;
+            font-style: italic;
+            letter-spacing: 0.02em;
+            color: #5b554a;
+            border-left: 3px solid #d9cdb8;
+            padding-left: 1.2rem;
+        }
+
+        /* 承接段落 */
+        .lead {
+            margin: 1.2rem 0 1.5rem 0;
+            font-size: 1rem;
+            color: #3b3730;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        .lead a {
+            color: #7f6b4f;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-color: #d6c9b6;
+        }
+        .lead a:hover {
+            text-decoration-color: #7f6b4f;
+            color: #52473b;
+        }
+
+        /* 特点列表 */
+        .feature-list {
+            margin: 2.4rem 0 1.8rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .feature-list li {
+            background: #f2ede5;
+            padding: 0.9rem 1.4rem;
+            margin-bottom: 0.7rem;
+            border-radius: 0 20px 20px 0;
+            border-left: 6px solid #cbbca5;
+            font-size: 0.95rem;
+            color: #3b3630;
+            text-align: justify;
+        }
+        .feature-list li strong {
+            color: #5f4f3a;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        /* 引用块 / 提示框 */
+        .note {
+            background: #efe9df;
+            padding: 1.2rem 1.8rem;
+            margin: 2rem 0 1.8rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #b8a386;
+            font-size: 0.95rem;
+            color: #3f3a32;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .note .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #917f65;
+            margin-bottom: 0.3rem;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        /* 温和结尾 */
+        .closing {
+            margin: 2.5rem 0 1.2rem 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd6ca;
+            font-size: 0.92rem;
+            color: #5a5246;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        /* 小字号、分隔 */
+        .meta {
+            margin-top: 2.2rem;
+            font-size: 0.82rem;
+            color: #9b9284;
+            text-align: center;
+            letter-spacing: 0.3px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 550px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .opening {
+                font-size: 1.1rem;
+                padding-left: 0.9rem;
+            }
+            .feature-list li {
+                padding: 0.7rem 1rem;
+                font-size: 0.9rem;
+            }
+            .note {
+                padding: 0.9rem 1.2rem;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .opening {
+                font-size: 1.6rem;
+                padding-left: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- 开场短句 -->
+    <div class="opening">
+        有时候，查一款游戏就像在图书馆翻一本旧书。
+    </div>
+
+    <!-- 承接段落 -->
+    <p class="lead">
+        一个名字、一段模糊的记忆、一个关卡卡了许久……这些细碎的念头，往往把人的注意力牵向屏幕，点开标签页，开始一次轻量的检索。慢慢地，从一条信息跳到另一条，原本只想知道“这游戏叫什么”，后来却读到了它的开发背景、版本变迁，甚至几篇截然不同的评测。在这样日常的查询与对照中，<a href="https://hub-home-igame.com">爱游戏</a> 渐渐成了一个可以停留的地方——信息本身不必着急，翻看的过程反而踏实。
+    </p>
+
+    <!-- 特点列表 采用叙述式，不是干条列 -->
+    <ul class="feature-list">
+        <li><strong>· 信息维度的对照</strong> —— 同一条内容，不同来源的叙述常有细微差异。一个道具的说明、一个版本的更新日志，并排看下来，比单篇更接近全貌。</li>
+        <li><strong>· 延伸阅读的线索</strong> —— 从一款游戏的某个设定，连接到另一款相近作品，或是一段相关的行业往事。页面之间不喧哗，但路径清晰，由点及面。</li>
+        <li><strong>· 安静的查阅节奏</strong> —— 没有弹窗催促，没有浮夸的排行榜。每次打开，像翻开一本折了角的笔记本，信息都在老位置，不急着翻篇。</li>
+    </ul>
+
+    <!-- 提示框 / 引用块 -->
+    <div class="note">
+        <div class="label">◈ 一点观察</div>
+        很多查询的开始，只是一次随意的搜索；但保持页面打开、反复回来比对，才是日常中真正消耗耐心的地方。一个设计克制的站点，不会打断这种节奏，也不会在正文里塞满闪烁的引导。
+    </div>
+
+    <!-- 温和结尾 场景化，呼应日常 -->
+    <p class="closing">
+        晚上整理书签，发现好几个标签页还停留在上一次查询的画面。有些游戏的名字早已忘记当初为什么搜，但页面上那段介绍、评论里的一句话，又把人拉回当时的语境。存着就存着吧，下次再打开，也许又是另一条线索的起点。<br><br>
+        翻看、对照、延展，这些动作本身构成了理解的路径。<a href="https://hub-home-igame.com" style="color: #5f4f3a; text-decoration: underline; text-underline-offset: 3px;">爱游戏</a> 不提供终局答案，但页面之间的留白，足够让人走完自己的思路。
+    </p>
+
+    <!-- 小角落 -->
+    <div class="meta">
+        <span>日常查询 · 对照 · 延伸阅读</span>
+    </div>
+
+</div>
+</body>
+</html>
